@@ -1,0 +1,9 @@
+transformers
+pymupdf 
+pytesseract 
+pdf2image 
+pillow 
+langchain-text-splitters 
+sentence-transformers 
+faiss-cpu
+groq
