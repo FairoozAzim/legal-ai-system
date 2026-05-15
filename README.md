@@ -15,6 +15,7 @@ This project builds a grounded legal document AI system that:
 - Embedding-based semantic search
 - Grounded LLM generation
 - Feedback loop with learned writing rules
+- A simple UI with streamlit to test the system 
 
 ---
 
@@ -30,6 +31,7 @@ PDF → OCR/Text Extraction → Chunking → Embeddings → Vector DB (FAISS)
 ### Install dependencies
 ```bash
 pip install -r requirements.txt
+
 ```
 ### Install Tesseract (for OCR)
 https://github.com/UB-Mannheim/tesseract/wiki
@@ -38,9 +40,16 @@ https://github.com/UB-Mannheim/tesseract/wiki
  ```bash
  export GROQ_API_KEY=your_key
  ```
- ### Test Pipeline
+ ### Test Pipeline with demo PDF added
  ```bash
  python test.py
+
+```
+
+### Test Pipeline with Own PDF
+ ```bash
+    streamlit run streamlit_app.py
+
 ```
 
 ### Assumptions
