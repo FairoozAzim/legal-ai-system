@@ -1,0 +1,52 @@
+[
+  {
+    "text": "Case File: Harper vs. Westbrook Holdings\nThis packet contains partially structured legal-style documents intended for OCR, retrieval, grounded\nsummarization, and evidence extraction experiments. Some sections intentionally contain inconsistent\nformatting and noisy data.\nCase Summary\nPlaintiff: Amelia Harper\nDefendant: Westbrook Holdings LLC\nCase Type: Property Ownership Dispute\nRelevant Dates: March 12, 2022 — Property transfer allegedly recorded. June 4, 2023 — Inspection",
+    "metadata": {
+      "page": 1,
+      "source": "./pdf_samples/sample_legal_case_packet.pdf",
+      "num_images": 1
+    },
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "text": "Relevant Dates: March 12, 2022 — Property transfer allegedly recorded. June 4, 2023 — Inspection\nrequest submitted. January 11, 2024 — Ownership challenge filed. The claimant alleges the transfer\nrecords contain conflicting ownership information.\nDocument\nPage\nEvidence Snippet\nTransfer Record\n3\nOwnership remains under review\nInspection Memo\n5\nBoundary markers unclear\nWitness Statement\n7\nPrior owner disputed transaction",
+    "metadata": {
+      "page": 1,
+      "source": "./pdf_samples/sample_legal_case_packet.pdf",
+      "num_images": 1
+    },
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "text": "Inspection Memo\n5\nBoundary markers unclear\nWitness Statement\n7\nPrior owner disputed transaction\nSCANNED NOTE (low quality transcription): “Owner ship certifcate appears incomplete. signture\nmismatch on record copy. Need manual verificatoin before filing recommendation.”\nAttached Field Note Scan",
+    "metadata": {
+      "page": 1,
+      "source": "./pdf_samples/sample_legal_case_packet.pdf",
+      "num_images": 1
+    },
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "text": "[OCR IMAGE CONTENT]\nLe\n\nPome agacton cimptate um weno\n\n(Need verticatan trom county cee",
+    "metadata": {
+      "page": 1,
+      "source": "./pdf_samples/sample_legal_case_packet.pdf",
+      "num_images": 1
+    },
+    "chunk_index": 3,
+    "total_chunks": 4
+  },
+  {
+    "text": "Internal Review Notes\n- Several pages appear to be photocopies of photocopies.\n- OCR confidence expected to vary significantly by section.\n- Some evidence may be incomplete or partially obscured.",
+    "metadata": {
+      "page": 2,
+      "source": "./pdf_samples/sample_legal_case_packet.pdf",
+      "num_images": 0
+    },
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

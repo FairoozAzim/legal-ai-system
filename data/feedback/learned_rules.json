@@ -18,5 +18,10 @@
     "rule": "Use clear and concise headings and labels to organize and reference evidence.",
     "source_edit_id": "dd2f914c-9f61-4885-a744-7f73849a1f8e",
     "source_doc_id": "sample_case_001"
+  },
+  {
+    "rule": "Use clear and concise headings and subheadings to organize complex information.",
+    "source_edit_id": "3f2f19f6-a8a1-4567-b990-587aecaee147",
+    "source_doc_id": "sample_case_001"
   }
 ]

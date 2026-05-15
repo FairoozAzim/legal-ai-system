@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 from app.ingestion import OCRPDFLoader
+from app.utils.output_manager import OutputManager
 from app.retrieval import (
     chunk_documents,
     EmbeddingModel,
@@ -22,8 +23,8 @@ GROQ_API_KEY = os.getenv("GROQ_KEY")
 # Load PDF
 # -----------------------------------
 PDF_PATH =  "./pdf_samples/sample_legal_case_packet.pdf"
-loader = OCRPDFLoader(PDF_PATH)
 
+loader = OCRPDFLoader(PDF_PATH)
 documents = loader.load()
 
 # -----------------------------------
@@ -56,20 +57,19 @@ vector_store.add_documents(
     embeddings,
     chunks
 )
+vector_store.save("data/vector_store/")
 
 # -----------------------------------
 # Retrieval
 # -----------------------------------
 
+query = "Summarize the ownership dispute"
 retriever = Retriever(
     embedding_model,
     vector_store
 )
 
-retrieved_chunks = retriever.retrieve(
-    "Summarize the ownership dispute",
-    k=5
-)
+retrieved_chunks = retriever.retrieve(query,k=5)
 
 # -----------------------------------
 # Generation
@@ -82,6 +82,14 @@ generator = GroundedGenerator(
 draft = generator.generate(
     retrieved_chunks
 )
+
+output_manager = OutputManager()
+save_output = output_manager.save_output(
+        pdf_name= Path(PDF_PATH).name,
+        query=query,
+        generated_draft=draft,    
+        retrieved_chunks=retrieved_chunks
+    )
 
 
 

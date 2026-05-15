@@ -20,13 +20,16 @@ def chunk_documents(
     for doc in documents:
 
         split_texts = splitter.split_text(doc["text"])
+        chunk_num = len(split_texts)
 
-        for chunk in split_texts:
+        for i, chunk in enumerate(split_texts):
 
             chunks.append(
                 {
                     "text": chunk,
-                    "metadata": doc["metadata"]
+                    "metadata": doc["metadata"],
+                    "chunk_index": i,
+                    "total_chunks": chunk_num  
                 }
             )
 
