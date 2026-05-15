@@ -1,0 +1,17 @@
+[
+  {
+    "rule": "Use simple, direct language to state the main point, and avoid unnecessary details.",
+    "source_edit_id": "00ca3ff7-3369-4c7f-b6ac-491078d003ba",
+    "source_doc_id": "sample_case_001"
+  },
+  {
+    "rule": "Use a single, concise statement to convey the main point, and then provide supporting details in a separate paragraph.",
+    "source_edit_id": "955ccc83-9835-43f7-9c5e-3b9a66d7ad76",
+    "source_doc_id": "sample_case_001"
+  },
+  {
+    "rule": "Use a single, concise sentence to summarize complex information.",
+    "source_edit_id": "eba937a4-dfcc-4853-83ff-c4d537a94d45",
+    "source_doc_id": "sample_case_001"
+  }
+]

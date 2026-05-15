@@ -1,0 +1,20 @@
+[
+  {
+    "id": "2e7e5a30-e839-4ea6-afda-034e08724550",
+    "timestamp": "2026-05-15T06:54:54.225167",
+    "doc_id": "harper_vs_westbrook",
+    "query": "Summarize ownership dispute evidence",
+    "original_draft": "The ownership certificate appears incomplete with a signature mismatch on the record copy, requiring manual verification before filing.",
+    "edited_draft": "NOTE: The following is derived from a low-quality OCR scan and should NOT be treated as verified evidence until manually reviewed. The scan suggests the ownership certificate may be incomplete and a signature mismatch may exist on the record copy.",
+    "rule_extracted": true
+  },
+  {
+    "id": "bd707dc7-80b7-416a-9a1f-858366dd647d",
+    "timestamp": "2026-05-15T06:54:54.229170",
+    "doc_id": "harper_vs_westbrook",
+    "query": "Summarize ownership dispute evidence",
+    "original_draft": "**Key Timeline**\n1. March 12, 2022: Property transfer allegedly recorded\n2. June 4, 2023: Inspection request submitted\n3. January 11, 2024: Ownership challenge filed\n\n**Important Unresolved Issues**\n- Signature mismatch on ownership certificate\n- Unclear boundary markers",
+    "edited_draft": "**Important Unresolved Issues** *(listed first for reviewer attention)*\n- Signature mismatch on ownership certificate (unverified \u2014 OCR source)\n- Unclear boundary markers (Inspection Memo, Page 5)\n- OCR content from scanned note requires manual verification\n\n**Key Timeline**\n1. March 12, 2022: Property transfer allegedly recorded\n2. June 4, 2023: Inspection request submitted\n3. January 11, 2024: Ownership challenge filed",
+    "rule_extracted": true
+  }
+]

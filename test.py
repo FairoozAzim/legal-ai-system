@@ -1,5 +1,6 @@
+import os
+from dotenv import load_dotenv
 from app.ingestion import OCRPDFLoader
-
 from app.retrieval import (
     chunk_documents,
     EmbeddingModel,
@@ -7,29 +8,34 @@ from app.retrieval import (
     Retriever
 )
 
+from app.feedback import (
+    FeedbackStore,
+    FeedbackLearner
+)
+from pathlib import Path
+
+from app.draft_generation import GroundedGenerator
+
+load_dotenv()  
+GROQ_API_KEY = os.getenv("GROQ_KEY")
 # -----------------------------------
 # Load PDF
 # -----------------------------------
-
-PDF_PATH = "./pdf_samples/sample_legal_case_packet.pdf"
+PDF_PATH =  "./pdf_samples/sample_legal_case_packet.pdf"
 loader = OCRPDFLoader(PDF_PATH)
 
 documents = loader.load()
 
-print("----- PDF Loaded -------")
 # -----------------------------------
-# Chunk documents
+# Chunking
 # -----------------------------------
 
 chunks = chunk_documents(documents)
 
-print(f"Total chunks: {len(chunks)}")
-
 # -----------------------------------
-# Create embeddings
+# Embeddings
 # -----------------------------------
 
-print("----- Creating Embeddings ------")
 embedding_model = EmbeddingModel()
 
 texts = [chunk["text"] for chunk in chunks]
@@ -37,7 +43,7 @@ texts = [chunk["text"] for chunk in chunks]
 embeddings = embedding_model.encode(texts)
 
 # -----------------------------------
-# Create vector store
+# Vector Store
 # -----------------------------------
 
 embedding_dim = embeddings.shape[1]
@@ -60,20 +66,79 @@ retriever = Retriever(
     vector_store
 )
 
-results = retriever.retrieve(
-    "ownership dispute evidence",
-    k=3
+retrieved_chunks = retriever.retrieve(
+    "Summarize the ownership dispute",
+    k=5
 )
 
 # -----------------------------------
-# Print results
+# Generation
 # -----------------------------------
 
-for i, result in enumerate(results, start=1):
+generator = GroundedGenerator(
+    groq_api_key= GROQ_API_KEY
+)
 
-    print("=" * 80)
-    print(f"RESULT {i}")
-    print("=" * 80)
+draft = generator.generate(
+    retrieved_chunks
+)
 
-    print(result["text"][:1000])
-    print("\n")
+
+
+# -----------------------------------
+# Store feedback
+# -----------------------------------
+EDITS_FILE = Path("edit_records.json")
+RULES_FILE = Path("learned_rules.json")
+
+
+feedback_store = FeedbackStore()
+
+feedback_store.capture_edit(
+    original=draft,
+    edited="""
+        The ownership status remains uncertain.
+        According to the transfer record,
+        verification is still under review.
+""",
+    doc_id="sample_case_001",
+    query="Summarize ownership dispute"
+)
+
+# -----------------------------------
+# Learn rules
+# -----------------------------------
+
+learner = FeedbackLearner(
+    api_key=GROQ_API_KEY,
+    feedback_store=feedback_store
+)
+
+learner.process_pending_edits()
+
+# -----------------------------------
+# Build prompt injection block
+# -----------------------------------
+
+rules_block = learner.build_rules_block()
+
+print(rules_block)
+
+
+# -----------------------------------
+# Generation
+# -----------------------------------
+
+
+generator = GroundedGenerator(
+    groq_api_key= GROQ_API_KEY
+)
+
+improved_draft = generator.generate(
+    retrieved_chunks,
+    rules_block=rules_block
+)
+
+
+print("Original Draft : ", draft)
+print("Improved Draft : ", improved_draft)
