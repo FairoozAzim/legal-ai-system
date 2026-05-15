@@ -81,131 +81,134 @@ left_col, right_col = st.columns(2)
 # Process PDF
 # -----------------------------------
 
-if uploaded_file is not None:
+if uploaded_file is None:
+    st.info("Upload a PDF to begin!")
+    
+elif uploaded_file is not None:
     os.makedirs("pdf_samples", exist_ok=True)
 
-pdf_path = os.path.join(
-    "pdf_samples",
-    uploaded_file.name
-)
-
-with open(pdf_path, "wb") as f:
-
-    f.write(uploaded_file.read())
-
-with st.spinner("Processing PDF..."):
-
-    # -----------------------------------
-    # Ingestion
-    # -----------------------------------
-
-    loader = OCRPDFLoader(pdf_path)
-
-    documents = loader.load()
-
-    # -----------------------------------
-    # Chunking
-    # -----------------------------------
-
-    chunks = chunk_documents(documents)
-
-    # -----------------------------------
-    # Embeddings
-    # -----------------------------------
-
-    embedding_model = EmbeddingModel()
-
-    texts = [
-        chunk["text"]
-        for chunk in chunks
-    ]
-
-    embeddings = embedding_model.encode(texts)
-
-    # -----------------------------------
-    # Vector Store
-    # -----------------------------------
-
-    embedding_dim = embeddings.shape[1]
-
-    vector_store = FAISSVectorStore(
-        embedding_dim
+    pdf_path = os.path.join(
+        "pdf_samples",
+        uploaded_file.name
     )
 
-    vector_store.add_documents(
-        embeddings,
-        chunks
-    )
-    vector_store.save("data/vector_store/")
+    with open(pdf_path, "wb") as f:
+
+        f.write(uploaded_file.read())
+
+    with st.spinner("Processing PDF..."):
+
+        # -----------------------------------
+        # Ingestion
+        # -----------------------------------
+
+        loader = OCRPDFLoader(pdf_path)
+
+        documents = loader.load()
+
+        # -----------------------------------
+        # Chunking
+        # -----------------------------------
+
+        chunks = chunk_documents(documents)
+
+        # -----------------------------------
+        # Embeddings
+        # -----------------------------------
+
+        embedding_model = EmbeddingModel()
+
+        texts = [
+            chunk["text"]
+            for chunk in chunks
+        ]
+
+        embeddings = embedding_model.encode(texts)
+
+        # -----------------------------------
+        # Vector Store
+        # -----------------------------------
+
+        embedding_dim = embeddings.shape[1]
+
+        vector_store = FAISSVectorStore(
+            embedding_dim
+        )
+
+        vector_store.add_documents(
+            embeddings,
+            chunks
+        )
+        vector_store.save("data/vector_store/")
+
+        # -----------------------------------
+        # Retrieval
+        # -----------------------------------
+
+        retriever = Retriever(
+            embedding_model,
+            vector_store
+        )
+
+        retrieved_chunks = retriever.retrieve(
+            query,
+            k=top_k
+        )
+
+        # -----------------------------------
+        # Generation
+        # -----------------------------------
+
+        generator = GroundedGenerator(
+            groq_api_key= GROQ_API_KEY
+        )
+
+        draft = generator.generate(
+            retrieved_chunks
+        )
+        output_manager = OutputManager()
+
+        save_output = output_manager.save_output(
+            pdf_name=uploaded_file.name,
+            query=query,
+            generated_draft=draft,
+            retrieved_chunks=retrieved_chunks
+        )
 
     # -----------------------------------
-    # Retrieval
+    # LEFT COLUMN
     # -----------------------------------
 
-    retriever = Retriever(
-        embedding_model,
-        vector_store
-    )
+    with left_col:
 
-    retrieved_chunks = retriever.retrieve(
-        query,
-        k=top_k
-    )
+        st.subheader("Generated Draft")
+
+        st.markdown(draft)
 
     # -----------------------------------
-    # Generation
+    # RIGHT COLUMN
     # -----------------------------------
 
-    generator = GroundedGenerator(
-        groq_api_key= GROQ_API_KEY
-    )
+    with right_col:
 
-    draft = generator.generate(
-        retrieved_chunks
-    )
-    output_manager = OutputManager()
+        st.subheader("Retrieved Evidence")
 
-    save_output = output_manager.save_output(
-        pdf_name=uploaded_file.name,
-        query=query,
-        generated_draft=draft,
-        retrieved_chunks=retrieved_chunks
-    )
-
-# -----------------------------------
-# LEFT COLUMN
-# -----------------------------------
-
-with left_col:
-
-    st.subheader("Generated Draft")
-
-    st.markdown(draft)
-
-# -----------------------------------
-# RIGHT COLUMN
-# -----------------------------------
-
-with right_col:
-
-    st.subheader("Retrieved Evidence")
-
-    for i, chunk in enumerate(
-        retrieved_chunks,
-        start=1
-    ):
-
-        with st.expander(
-            f"Evidence {i} | "
-            f"Page {chunk['metadata']['page']}"
+        for i, chunk in enumerate(
+            retrieved_chunks,
+            start=1
         ):
 
-            st.markdown(
-                f"""
-**Source Page:** {chunk['metadata']['page']}
+            with st.expander(
+                f"Evidence {i} | "
+                f"Page {chunk['metadata']['page']}"
+            ):
 
-**Chunk Text:**
+                st.markdown(
+                    f"""
+    **Source Page:** {chunk['metadata']['page']}
 
-{chunk['text']}
-"""
-)
+    **Chunk Text:**
+
+    {chunk['text']}
+    """
+    )

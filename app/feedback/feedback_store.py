@@ -59,14 +59,14 @@ class FeedbackStore:
         self,
         original,
         edited,
-        doc_id,
+        pdf_name,
         query
     ):
 
         record = {
             "id": str(uuid.uuid4()),
             "timestamp": datetime.utcnow().isoformat(),
-            "doc_id": doc_id,
+            "pdf_name": pdf_name,
             "query": query,
             "original_draft": original,
             "edited_draft": edited,

@@ -119,7 +119,7 @@ class FeedbackLearner:
             rule = {
                 "rule": rule_text,
                 "source_edit_id": edit["id"],
-                "source_doc_id": edit["doc_id"],
+                "source_name": edit["pdf_name"],
             }
 
             rules.append(rule)

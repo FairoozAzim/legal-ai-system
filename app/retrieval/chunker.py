@@ -1,3 +1,4 @@
+import uuid
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
@@ -28,7 +29,7 @@ def chunk_documents(
                 {
                     "text": chunk,
                     "metadata": doc["metadata"],
-                    "chunk_index": i,
+                    "chunk_index": str(uuid.uuid4()),
                     "total_chunks": chunk_num  
                 }
             )

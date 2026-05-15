@@ -1,98 +1,14 @@
 import os
-from dotenv import load_dotenv
-from app.ingestion import OCRPDFLoader
-from app.utils.output_manager import OutputManager
-from app.retrieval import (
-    chunk_documents,
-    EmbeddingModel,
-    FAISSVectorStore,
-    Retriever
-)
-
 from app.feedback import (
     FeedbackStore,
     FeedbackLearner
 )
 from pathlib import Path
-
+from dotenv import load_dotenv
 from app.draft_generation import GroundedGenerator
 
 load_dotenv()  
 GROQ_API_KEY = os.getenv("GROQ_KEY")
-# -----------------------------------
-# Load PDF
-# -----------------------------------
-PDF_PATH =  "./pdf_samples/sample_legal_case_packet.pdf"
-
-loader = OCRPDFLoader(PDF_PATH)
-documents = loader.load()
-
-# -----------------------------------
-# Chunking
-# -----------------------------------
-
-chunks = chunk_documents(documents)
-
-# -----------------------------------
-# Embeddings
-# -----------------------------------
-
-embedding_model = EmbeddingModel()
-
-texts = [chunk["text"] for chunk in chunks]
-
-embeddings = embedding_model.encode(texts)
-
-# -----------------------------------
-# Vector Store
-# -----------------------------------
-
-embedding_dim = embeddings.shape[1]
-
-vector_store = FAISSVectorStore(
-    embedding_dim
-)
-
-vector_store.add_documents(
-    embeddings,
-    chunks
-)
-vector_store.save("data/vector_store/")
-
-# -----------------------------------
-# Retrieval
-# -----------------------------------
-
-query = "Summarize the ownership dispute"
-retriever = Retriever(
-    embedding_model,
-    vector_store
-)
-
-retrieved_chunks = retriever.retrieve(query,k=5)
-
-# -----------------------------------
-# Generation
-# -----------------------------------
-
-generator = GroundedGenerator(
-    groq_api_key= GROQ_API_KEY
-)
-
-draft = generator.generate(
-    retrieved_chunks
-)
-
-output_manager = OutputManager()
-save_output = output_manager.save_output(
-        pdf_name= Path(PDF_PATH).name,
-        query=query,
-        generated_draft=draft,    
-        retrieved_chunks=retrieved_chunks
-    )
-
-
-
 # -----------------------------------
 # Store feedback
 # -----------------------------------
@@ -152,47 +68,46 @@ Evidence References
    - "Several pages appear to be photocopies of photocopies. OCR confidence varies significantly by section. Some evidence may be incomplete or partially obscured."
 """
 
-feedback_store.capture_edit(
-    original=draft,
-    edited= sample_edit,
-    doc_id="sample_case_001",
-    query="Summarize ownership dispute"
-)
+def feedback_learning(original_draft, pdf_name,  retrieved_chunks, query = "Summarize the case",sample_edit=sample_edit):
 
-# -----------------------------------
-# Learn rules
-# -----------------------------------
+    feedback_store.capture_edit(
+        original=original_draft,
+        edited= sample_edit,
+        pdf_name=pdf_name,
+        query= query
+        )
 
-learner = FeedbackLearner(
-    api_key=GROQ_API_KEY,
-    feedback_store=feedback_store
-)
+    # -----------------------------------
+    # Learn rules
+    # -----------------------------------
 
-learner.process_pending_edits()
+    learner = FeedbackLearner(
+        api_key=GROQ_API_KEY,
+        feedback_store=feedback_store
+    )
 
-# -----------------------------------
-# Build prompt injection block
-# -----------------------------------
+    learner.process_pending_edits()
 
-rules_block = learner.build_rules_block()
+    # -----------------------------------
+    # Build prompt injection block
+    # -----------------------------------
 
-print(rules_block)
+    rules_block = learner.build_rules_block()
 
-
-# -----------------------------------
-# Generation
-# -----------------------------------
+    print(rules_block)
 
 
-generator = GroundedGenerator(
-    groq_api_key= GROQ_API_KEY
-)
-
-improved_draft = generator.generate(
-    retrieved_chunks,
-    rules_block=rules_block
-)
+    # -----------------------------------
+    # Generation
+    # -----------------------------------
 
 
-print("Original Draft : ", draft)
-print("Improved Draft : ", improved_draft)
+    generator = GroundedGenerator(
+        groq_api_key= GROQ_API_KEY
+    )
+
+    improved_draft = generator.generate(
+        retrieved_chunks,
+        rules_block=rules_block
+    )
+    return improved_draft

@@ -1,0 +1,58 @@
+{
+  "timestamp": "20260515_153252",
+  "pdf_name": "sample_legal_case_packet.pdf",
+  "query": "Summarize the case",
+  "generated_draft": "**Case Summary**\n\nThis is a property ownership dispute case filed by Amelia Harper against Westbrook Holdings LLC. The dispute revolves around a property transfer allegedly recorded on March 12, 2022. The plaintiff alleges that the transfer records contain conflicting ownership information, which has led to an ownership challenge filed on January 11, 2024.\n\n**Key Timeline**\n\n1. March 12, 2022: Property transfer allegedly recorded.\n2. June 4, 2023: Inspection request submitted.\n3. January 11, 2024: Ownership challenge filed.\n\n**References**\n\n1. [Evidence 1] - Case File: Harper vs. Westbrook Holdings\n2. [Evidence 2] - Inspection Memo\n3. [Evidence 3] - Relevant Dates and Document Snippets\n4. [Evidence 4] - OCR IMAGE CONTENT (Note: The content of this evidence is uncertain due to poor image quality and OCR confidence issues.)\n5. [Evidence 5] - Internal Review Notes\n\nPlease note that the content of [Evidence 4] is uncertain due to the poor image quality and OCR confidence issues. Additionally, the internal review notes in [Evidence 5] highlight potential issues with the completeness and accuracy of the evidence.",
+  "retrieved_evidence": [
+    {
+      "chunk_id": "b903cdc6-0691-4a6a-a917-c59a12ae857c",
+      "text": "Case File: Harper vs. Westbrook Holdings\nThis packet contains partially structured legal-style documents intended for OCR, retrieval, grounded\nsummarization, and evidence extraction experiments. Some sections intentionally contain inconsistent\nformatting and noisy data.\nCase Summary\nPlaintiff: Amelia Harper\nDefendant: Westbrook Holdings LLC\nCase Type: Property Ownership Dispute\nRelevant Dates: March 12, 2022 \u2014 Property transfer allegedly recorded. June 4, 2023 \u2014 Inspection",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.5777331590652466
+    },
+    {
+      "chunk_id": "f82a7f61-0e73-4890-8638-cd6fa4be1a4f",
+      "text": "Inspection Memo\n5\nBoundary markers unclear\nWitness Statement\n7\nPrior owner disputed transaction\nSCANNED NOTE (low quality transcription): \u201cOwner ship certifcate appears incomplete. signture\nmismatch on record copy. Need manual verificatoin before filing recommendation.\u201d\nAttached Field Note Scan",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.7774772644042969
+    },
+    {
+      "chunk_id": "2c6cf27b-0548-4116-99b8-1a169e854705",
+      "text": "Relevant Dates: March 12, 2022 \u2014 Property transfer allegedly recorded. June 4, 2023 \u2014 Inspection\nrequest submitted. January 11, 2024 \u2014 Ownership challenge filed. The claimant alleges the transfer\nrecords contain conflicting ownership information.\nDocument\nPage\nEvidence Snippet\nTransfer Record\n3\nOwnership remains under review\nInspection Memo\n5\nBoundary markers unclear\nWitness Statement\n7\nPrior owner disputed transaction",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.7798272967338562
+    },
+    {
+      "chunk_id": "2a7044ae-cf03-4a53-8e03-7b953c184fa3",
+      "text": "[OCR IMAGE CONTENT]\nLe\n\nPome agacton cimptate um weno\n\n(Need verticatan trom county cee",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.7947733402252197
+    },
+    {
+      "chunk_id": "699831b0-aa8c-433d-b43c-78f0a1e59cc3",
+      "text": "Internal Review Notes\n- Several pages appear to be photocopies of photocopies.\n- OCR confidence expected to vary significantly by section.\n- Some evidence may be incomplete or partially obscured.",
+      "metadata": {
+        "page": 2,
+        "source": "./pdf_samples/sample_legal_case_packet.pdf",
+        "num_images": 0
+      },
+      "score": 0.8564009666442871
+    }
+  ]
+}

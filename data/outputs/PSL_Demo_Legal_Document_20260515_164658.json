@@ -1,0 +1,53 @@
+{
+  "timestamp": "20260515_164658",
+  "pdf_name": "PSL_Demo_Legal_Document.pdf",
+  "query": "Summarize the document",
+  "generated_draft": "**Case Summary**\n\nThis is a summary of the Lease Agreement between the Landlord and Tenant, effective January 1, 2024. The Lease Agreement governs the use and occupancy of Suite 1402, located on the 14th floor of Westfield Tower, with an approximate rentable area of 3,820 sq. ft.\n\nThe key terms of the Lease Agreement include:\n\n* The Tenant's permitted use of the Premises is solely for general office and professional services purposes.\n* The Tenant must comply with all applicable laws, codes, ordinances, and regulations governing the use and occupancy of the Premises.\n* The Tenant is required to pay Base Rent in instalments, with a five-business-day grace period for late payments.\n* Upon an Event of Default, the Landlord may terminate the Lease, re-enter and re-let the Premises, or pursue other remedies.\n* The Lease Agreement may be amended only by a written instrument signed by both parties.\n\n**Key Timeline**\n\n* January 1, 2024: Commencement of the Lease Term\n* April 30 of each year: Deadline for Tenant to submit a schedule of rent payments for the preceding calendar year\n* November 14, 2023: Amendment #1 to the Lease Agreement was signed, incorporating changes to the agreement\n* Uncertain: The date for signing Amendment #2, which pertains to rooftop access, is pending\n\n**References**\n\n* Evidence 1: Page 5 of the Lease Agreement (entire agreement and amendments)\n* Evidence 2: Page 5 of the Lease Agreement (Default, Remedies & General Provisions)\n* Evidence 3: Page 6 of the Lease Agreement (Shared conference center and building management office)\n* Evidence 4: Page 3 of the Lease Agreement (Use & Occupancy)\n* Evidence 5: Page 3 of the Lease Agreement (General Terms & Conditions)",
+  "retrieved_evidence": [
+    {
+      "text": "constitutes the entire agreement of the parties with respect to the\nsubject matter hereof and supersedes all prior negotiations.\n3.7  AMENDMENTS. This Lea5e may be @mIended only by a written instrument signed by\nboth parties. Amendment #1 dated November 14, 2023 is incorporated.\n\u2014 4 \u2014",
+      "metadata": {
+        "page": 5,
+        "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+        "num_images": 0
+      },
+      "score": 0.878795862197876
+    },
+    {
+      "text": "ARTICLE III \u2014 DEFAULT, REMEDIES & GENERAL PROVISIONS\n3.1  DEFAULT. Thc occurrence of any of the following shall constitute an Event of\nDefault: (a) Tenant fails to pay any instal1ment of Base Rent within\nfive (5) business days after written notice; (b) Tenant vacates or\nabandons the Premises; (c) Tenant files for bankruptcy protection.\n3.2  REMEDIES. Upon anI Event of Defau1t, Landlord may, at its clection:I (i) terminate\nthis LIease upon written not!ce; (ii) re-enter and re-leIt the Premises;",
+      "metadata": {
+        "page": 5,
+        "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+        "num_images": 0
+      },
+      "score": 0.9428161382675171
+    },
+    {
+      "text": "- Shared conference center (Floors 3 & 14I) \u2014 booking via mgmt. portal\n- Rooftop terrace [access TBD \u2014 see Amendment #2 pending]\n- Building management office and mail room\nNB: rooftop access clause NOT finalised \u2014 do NOT include in client summary until Amend. #2 signed\nEXHI8IT B \u2014 RULES AND REGULATIONS OF WESTFIELD TOWER\n(Full text 0n file with BuiIlding Management \u2014 copy available uIpon\nEXHIBIT A\nINITIALLED\nTENANT: ___\n\u2014 5 \u2014",
+      "metadata": {
+        "page": 6,
+        "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+        "num_images": 0
+      },
+      "score": 0.9550982713699341
+    },
+    {
+      "text": "April 30 of eIach year for the preceding calendar year.\nCheckISched. C!\nARTICLE II \u2014 USE & OCCUPANCY\n2.1  PERMITTED USE. Tenant shall use and Occupy the Premises so|ely\nfOr general office and profes5ional services purIpo5es and for no other\npurpose without the prior written consent of Landlord.\n2.2  COMPILIANCE. Tenant shal1 comply wIith all applicable laws, Icodes,\nordinances, and regulations governing the use and occupancy of the Premises.\n\u2014 2 \u2014",
+      "metadata": {
+        "page": 3,
+        "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+        "num_images": 0
+      },
+      "score": 0.9608615636825562
+    },
+    {
+      "text": "COPY\nARTICLE I \u2014 GENERAL TERMS & CONDITIONS\n1.1  DEMISED PREMISES.\n1.1  DEMISED PREMISES. Landlord hereby leases to Tenant, and Tenant hereby leases from Landlord,\nthe prem!ses de5cribed as Suite 1402 (approx. 3,820 rentable sq.I ft.)\nlocated on the fourteenth (14th) floor of Westfield Tower (the \"Building\"),\ntogether with thIe right to use Common Areas as defincd !n Exhib1t A.\n1.2  LEASE TERM.\n1.2  LEASE TERM. The initial Lease Term shall commence on January 1, 2024 (\"CIommencementI",
+      "metadata": {
+        "page": 3,
+        "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+        "num_images": 0
+      },
+      "score": 0.9638065695762634
+    }
+  ]
+}

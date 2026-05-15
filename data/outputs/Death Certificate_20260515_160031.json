@@ -1,0 +1,26 @@
+{
+  "timestamp": "20260515_160031",
+  "pdf_name": "Death Certificate.pdf",
+  "query": "Summarize the document",
+  "generated_draft": "**Case Summary**\n\nThis case involves the certification of the death of Nurul Azim, a Bangladeshi national, who passed away in Madrid, Spain on August 7, 2012. The death was certified by the concerned authority, and a death certificate was issued. The Embassy of Bangladesh has no objection to transporting Nurul Azim's mortal remains to Bangladesh for burial in accordance with Muslim religious customs.\n\n**Key Timeline**\n\n- July 10, 1958: Nurul Azim was born in Chittagong, Bangladesh.\n- August 7, 2012: Nurul Azim passed away in Madrid, Spain at 14:30 hours.\n- August 8, 2012: The certification of Nurul Azim's death was issued.\n\n**References**\n\n1. [Evidence 1] - Certification of Death, dated August 8, 2012.\n2. [Evidence 2] - Letter from the Embassy of Bangladesh, dated August 8, 2012.",
+  "retrieved_evidence": [
+    {
+      "text": "[OCR IMAGE CONTENT]\nMBAJADA Lt \u00a3\n\nTo Whom It May Concern\n\nNo, FREM.MDR.2010 Madrid, August 8, 2012\n\nThis is to certify that Nurul Azim, son of Chowdhury Obaidul Hakim,\nBangladeshi national, born in Chittagong, Bangladesh on the 10\" of July\n1958, has died at Madrid, Spzin, on the 7\" of August 2012 at 14:30 hrs?\nThe concerned authority has duly issued his death certificate.",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/Death Certificate.pdf",
+        "num_images": 1
+      },
+      "score": 1.095287561416626
+    },
+    {
+      "text": "The Embassy of Bangladesh does not have any objection to transport his\nmortal remains/dead body to bury in Bangladesh in Muslim religious way.\n\nAjly cooperation to be extended in this respect will be deeply appreciated.\n\nSincerely,\n\nC\u00e9nsul y Jefe de Mision",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/Death Certificate.pdf",
+        "num_images": 1
+      },
+      "score": 1.116440773010254
+    }
+  ]
+}

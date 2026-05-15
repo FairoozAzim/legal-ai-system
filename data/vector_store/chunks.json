@@ -1,52 +1,162 @@
 [
   {
-    "text": "Case File: Harper vs. Westbrook Holdings\nThis packet contains partially structured legal-style documents intended for OCR, retrieval, grounded\nsummarization, and evidence extraction experiments. Some sections intentionally contain inconsistent\nformatting and noisy data.\nCase Summary\nPlaintiff: Amelia Harper\nDefendant: Westbrook Holdings LLC\nCase Type: Property Ownership Dispute\nRelevant Dates: March 12, 2022 — Property transfer allegedly recorded. June 4, 2023 — Inspection",
-    "metadata": {
-      "page": 1,
-      "source": "./pdf_samples/sample_legal_case_packet.pdf",
-      "num_images": 1
-    },
-    "chunk_index": 0,
-    "total_chunks": 4
-  },
-  {
-    "text": "Relevant Dates: March 12, 2022 — Property transfer allegedly recorded. June 4, 2023 — Inspection\nrequest submitted. January 11, 2024 — Ownership challenge filed. The claimant alleges the transfer\nrecords contain conflicting ownership information.\nDocument\nPage\nEvidence Snippet\nTransfer Record\n3\nOwnership remains under review\nInspection Memo\n5\nBoundary markers unclear\nWitness Statement\n7\nPrior owner disputed transaction",
-    "metadata": {
-      "page": 1,
-      "source": "./pdf_samples/sample_legal_case_packet.pdf",
-      "num_images": 1
-    },
-    "chunk_index": 1,
-    "total_chunks": 4
-  },
-  {
-    "text": "Inspection Memo\n5\nBoundary markers unclear\nWitness Statement\n7\nPrior owner disputed transaction\nSCANNED NOTE (low quality transcription): “Owner ship certifcate appears incomplete. signture\nmismatch on record copy. Need manual verificatoin before filing recommendation.”\nAttached Field Note Scan",
-    "metadata": {
-      "page": 1,
-      "source": "./pdf_samples/sample_legal_case_packet.pdf",
-      "num_images": 1
-    },
-    "chunk_index": 2,
-    "total_chunks": 4
-  },
-  {
-    "text": "[OCR IMAGE CONTENT]\nLe\n\nPome agacton cimptate um weno\n\n(Need verticatan trom county cee",
-    "metadata": {
-      "page": 1,
-      "source": "./pdf_samples/sample_legal_case_packet.pdf",
-      "num_images": 1
-    },
-    "chunk_index": 3,
-    "total_chunks": 4
-  },
-  {
-    "text": "Internal Review Notes\n- Several pages appear to be photocopies of photocopies.\n- OCR confidence expected to vary significantly by section.\n- Some evidence may be incomplete or partially obscured.",
+    "text": "DRAFT\nCOMMERCIAL LEASE AGREEMENT\nSuite 1402, Westfield Tower — 888 Corporate Drive, New York, NY 10036\nLANDLORD:\nWestfield Realty Partners LLC\nPrincipal Office: 1 Penn Plaza, Suite 3600, New York, NY 10119\nTENANT:\nAxiom Dynamics Inc.\nRegistered at: 245 Park Avenue, Floor 39, New York, NY 10167\n* see corrected addr. on pg. 3\nLEASE TERM:\nCommencingI January 1, 2024 — Expiring December 31, 2026\nBASE RENT:\n$24,500 per month (USD)\nSECURITY DEP.: $49,000\n  ->  $36,750  (amended 14 Nov)",
     "metadata": {
       "page": 2,
-      "source": "./pdf_samples/sample_legal_case_packet.pdf",
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
       "num_images": 0
     },
-    "chunk_index": 0,
-    "total_chunks": 1
+    "chunk_index": "406b9577-35cc-432c-b190-a78b6590b74d",
+    "total_chunks": 2
+  },
+  {
+    "text": "BASE RENT:\n$24,500 per month (USD)\nSECURITY DEP.: $49,000\n  ->  $36,750  (amended 14 Nov)\nPERMITTED USE:General office / professional services\nLANDLORD signature & date\nTENANT signature & date\nNOTARIZED\nNY COUNTY\n12 DEC 2023\nRECEIVED\nPSL FILE ROOM\n15 DEC 2023\n— 1 —",
+    "metadata": {
+      "page": 2,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "2abe30ba-050d-4084-916e-ce6bbb334f95",
+    "total_chunks": 2
+  },
+  {
+    "text": "COPY\nARTICLE I — GENERAL TERMS & CONDITIONS\n1.1  DEMISED PREMISES.\n1.1  DEMISED PREMISES. Landlord hereby leases to Tenant, and Tenant hereby leases from Landlord,\nthe prem!ses de5cribed as Suite 1402 (approx. 3,820 rentable sq.I ft.)\nlocated on the fourteenth (14th) floor of Westfield Tower (the \"Building\"),\ntogether with thIe right to use Common Areas as defincd !n Exhib1t A.\n1.2  LEASE TERM.\n1.2  LEASE TERM. The initial Lease Term shall commence on January 1, 2024 (\"CIommencementI",
+    "metadata": {
+      "page": 3,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "b4ba23d4-5a32-4c8f-8ba9-1be3a7be29a6",
+    "total_chunks": 5
+  },
+  {
+    "text": "1.2  LEASE TERM. The initial Lease Term shall commence on January 1, 2024 (\"CIommencementI\nDate\") and shIall exIpire on DecemberI 31, 2026 (\"ExIpirIation Date\"),\nunless sooner terminated pursuant to the provisions hereof.\n1.3  BASE RENT.\n1.3  BASE RENT. Tenant shall pay to Landlord, without prior demand, deduction, or set-off,\na mOnthly Base Rent of Twenty-Four Thousand Five Hundred Dollars\n($24,500.00), due and payable on the first (1st) day of each calendar",
+    "metadata": {
+      "page": 3,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "971b4cf8-a85a-443e-9b3a-b40173ba340f",
+    "total_chunks": 5
+  },
+  {
+    "text": "($24,500.00), due and payable on the first (1st) day of each calendar\nmonth. Payments to be made by ACH transfer or certified check.\n1.4  RENT ESCALATION.\n1.4  RENT ESCALATION. Base Rent sIhall increase by three percent (3%) Iper annum onI each\nann!versary 0f the Commencemcnt DatIe during the Lcase Term.\n1.5  SECURITY DEPOSIT.\n1.5  SECURITY DEPOSIT. Upon execution, Tenant shall deposit with Landlord a Security Deposit\nequal to two (2) months Base Rent ($49,000.00).",
+    "metadata": {
+      "page": 3,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "62e03083-ca51-48ab-b101-b52ed49991fd",
+    "total_chunks": 5
+  },
+  {
+    "text": "equal to two (2) months Base Rent ($49,000.00).\n1.5 months only per Amendment #1 — DL  [initialed]\n1.6  OPERATING EXPENSES.\nTenant shall paIy its Proportionate Sh@re (defined as 4.7%) of Building\nOperating Expenses in excess of the Base Year (2023) amount. Estim[ated]\nannual contrib[ution: see Sched]ule C] ..... [PAGE SCAN INCOMPLETE]\nLandIlord shall prIOvide annual reconciliati0n statcments no later than\nApril 30 of eIach year for the preceding calendar year.\nCheckISched. C!",
+    "metadata": {
+      "page": 3,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "988c41f6-7251-41c2-b1fe-d014d0944849",
+    "total_chunks": 5
+  },
+  {
+    "text": "April 30 of eIach year for the preceding calendar year.\nCheckISched. C!\nARTICLE II — USE & OCCUPANCY\n2.1  PERMITTED USE. Tenant shall use and Occupy the Premises so|ely\nfOr general office and profes5ional services purIpo5es and for no other\npurpose without the prior written consent of Landlord.\n2.2  COMPILIANCE. Tenant shal1 comply wIith all applicable laws, Icodes,\nordinances, and regulations governing the use and occupancy of the Premises.\n— 2 —",
+    "metadata": {
+      "page": 3,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "59681376-1dc0-4856-81ce-54e396de9043",
+    "total_chunks": 5
+  },
+  {
+    "text": "SCHEDULE A — RENT SCHEDULE & FINANCIAL SUMMARY\nVerified: M.R. 04/Jan/24\nPeriod\nStart Date\nEnd Date\nMonthly Rent\nAnnual Rent\nEscalation\nYear 1\n01 Jan 2024\n31 Dec 2024\n$24,500.00\n$294,000.00I\n—\nYear 2\n01 Jan 2025\n31 Dec 2025\n$25,235.00\n$302,820.00\n+3%\nYear 3\n01 Jan 2026\n31 Dec 2026\n$25,992.05\n[see note]\n+3%\nTotal 3-yr obligation (approx.): ~$898,820  [subject to Yr3 op-ex adj.]\nSCHEDULE B — SPECIAL CONDITIONS\nB-1  PARKING. Tenant is entitled to six (6) reserved parking spaces in the",
+    "metadata": {
+      "page": 4,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "2eca1f48-80af-4cb9-895a-3de44dfc172e",
+    "total_chunks": 3
+  },
+  {
+    "text": "B-1  PARKING. Tenant is entitled to six (6) reserved parking spaces in the\nBuilding garage at a rate Of $380/space/month.\nB-2  SIGNAGE. Landlord grants Tenant the right to install suite-entry\n1dentif1cation signage subject to Building standards.\nB-3  OPTION TO RENEW. Tenant has one (1) option to renew for an\nadditionaIl Itwenty-four (24) month peri0d at prevIailing\nmarket rate, exercisable by written notice 180 days prior.\nB-4  EARLY TERMINATION.",
+    "metadata": {
+      "page": 4,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "6fdda8eb-3b3c-4973-9914-4ef7308642ee",
+    "total_chunks": 3
+  },
+  {
+    "text": "market rate, exercisable by written notice 180 days prior.\nB-4  EARLY TERMINATION.\nTenant may terminate this Lease after the 18th month upon payment of a\nfee equal to [ILLEGIBLE] month5 Base Rcnt, prov1ded thIat Tenant\ndelivers [smudged — unreadable] ...............................................\nB-4 fee = 3 mo?IConfirm w/ H.S.\n* Corrected Tenant mailing address (ref. pg. 1):\n   Axiom Dynamics Inc., c/o General Counsel, 399 Park Ave, NY 10022\n— 3 —",
+    "metadata": {
+      "page": 4,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "d9dcaebe-cb9d-440f-aa60-cb2d581ac766",
+    "total_chunks": 3
+  },
+  {
+    "text": "ARTICLE III — DEFAULT, REMEDIES & GENERAL PROVISIONS\n3.1  DEFAULT. Thc occurrence of any of the following shall constitute an Event of\nDefault: (a) Tenant fails to pay any instal1ment of Base Rent within\nfive (5) business days after written notice; (b) Tenant vacates or\nabandons the Premises; (c) Tenant files for bankruptcy protection.\n3.2  REMEDIES. Upon anI Event of Defau1t, Landlord may, at its clection:I (i) terminate\nthis LIease upon written not!ce; (ii) re-enter and re-leIt the Premises;",
+    "metadata": {
+      "page": 5,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "077b13d0-7f24-475c-b5eb-bfd1bf58ef65",
+    "total_chunks": 4
+  },
+  {
+    "text": "this LIease upon written not!ce; (ii) re-enter and re-leIt the Premises;\nor (iii) pursue @ny other remedy aIvailable at 1@w or in equity.\n3.3  HOLDING OVER. If Tenant remains in pos5ession after the Expiration Date without\nLandlord's writtcn consent, such tenancy shall beI a month-to-month\ntenancy at 150% of the last applicable BIase Rent.\n3.4  NOTICES. All notices shall be in writing and delivered by (a) personal delivery;\n(b) overnight courier; or (c) certified mail, return receipt requested,",
+    "metadata": {
+      "page": 5,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "c65b89d0-ec51-4b3a-a831-6e2600750f85",
+    "total_chunks": 4
+  },
+  {
+    "text": "(b) overnight courier; or (c) certified mail, return receipt requested,\nto the addresses on the cover page (or aI5 updated in writing).\n3.5  GOVERNING LAW. This Lease shall be governed by the laws of the State of New York.\nAny dispute sh@ll be resolved Iby binding arbitration in New York County.\n3.6  ENTIRE AGREEMENT. This LeaseI, together with al| Exhibits and Schedules attacIhed hereto,\nconstitutes the entire agreement of the parties with respect to the",
+    "metadata": {
+      "page": 5,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "43e4f59c-16da-4c4b-b8d9-ae597f4206be",
+    "total_chunks": 4
+  },
+  {
+    "text": "constitutes the entire agreement of the parties with respect to the\nsubject matter hereof and supersedes all prior negotiations.\n3.7  AMENDMENTS. This Lea5e may be @mIended only by a written instrument signed by\nboth parties. Amendment #1 dated November 14, 2023 is incorporated.\n— 4 —",
+    "metadata": {
+      "page": 5,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "ad7afad4-e44a-4409-ad9c-1665f2f126e3",
+    "total_chunks": 4
+  },
+  {
+    "text": "EXHIBIT A — FLOOR PLAN REFERENCE & COMMON AREAS\n[FLOOR PLAN — SCAN QUALITY TOO LOW\nTO REPRODUCE — SEE HARD COPY FILE]\nReception ~220 sf\nOpen Plan ~1,800 sf\nConf Rm A\nServer Rm\nPartner Offices (x3) ~180sf ea.\nCommon Areas included in Tenant's Proportionate Share (4.7%):\n- Main lobbIy and reception vestibule (ground floor)\n- Elevator banks (3 passeInger, 1 5ervice)\n- 14th floor corridor and emergency stairwells\n- Shared conference center (Floors 3 & 14I) — booking via mgmt. portal",
+    "metadata": {
+      "page": 6,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "bcd5f534-5e06-4530-adaa-359dc23f777e",
+    "total_chunks": 2
+  },
+  {
+    "text": "- Shared conference center (Floors 3 & 14I) — booking via mgmt. portal\n- Rooftop terrace [access TBD — see Amendment #2 pending]\n- Building management office and mail room\nNB: rooftop access clause NOT finalised — do NOT include in client summary until Amend. #2 signed\nEXHI8IT B — RULES AND REGULATIONS OF WESTFIELD TOWER\n(Full text 0n file with BuiIlding Management — copy available uIpon\nEXHIBIT A\nINITIALLED\nTENANT: ___\n— 5 —",
+    "metadata": {
+      "page": 6,
+      "source": "./pdf_samples/PSL_Demo_Legal_Document.pdf",
+      "num_images": 0
+    },
+    "chunk_index": "17bac811-4070-433d-8d0a-ac5f570426aa",
+    "total_chunks": 2
   }
 ]

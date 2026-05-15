@@ -23,5 +23,45 @@
     "rule": "Use clear and concise headings and subheadings to organize complex information.",
     "source_edit_id": "3f2f19f6-a8a1-4567-b990-587aecaee147",
     "source_doc_id": "sample_case_001"
+  },
+  {
+    "rule": "Use bullet points to break up complex or multi-point issues.",
+    "source_edit_id": "a32f5ea8-072f-454f-aafa-271ad5ea7840",
+    "source_doc_id": "sample_case_001"
+  },
+  {
+    "rule": "Specify the parties involved in the dispute.",
+    "source_edit_id": "fe7668a6-8b96-4cbd-b3d3-551ab5d9f1f0",
+    "source_doc_id": "sample_case_001"
+  },
+  {
+    "rule": "Use specific, concrete facts and evidence to support general assertions.",
+    "source_edit_id": "c22125b3-c4fb-459a-be88-a7e0d2fd1f0b",
+    "source_doc_id": "sample_case_001"
+  },
+  {
+    "rule": "Use specific, concrete dates and details instead of placeholders.",
+    "source_edit_id": "bb5d5646-e6d2-4980-8754-0792814f18e0",
+    "source_doc_id": "sample_case_001"
+  },
+  {
+    "rule": "Ensure that the case summary accurately reflects the case's subject matter and facts.",
+    "source_edit_id": "82076dd5-fddb-42b5-b726-7a99dc659b29",
+    "source_doc_id": "sample_case_001"
+  },
+  {
+    "rule": "Use specific, referenced citations for all factual statements.",
+    "source_edit_id": "7edbb92a-54f6-4e9b-bad1-c5e3842d5e80",
+    "source_name": "PSL_Demo_Legal_Document.pdf"
+  },
+  {
+    "rule": "Use specific, referenced citations to support each statement of fact.",
+    "source_edit_id": "c1471d9c-0d6a-4be1-9cba-477cb5cbef4c",
+    "source_name": "PSL_Demo_Legal_Document.pdf"
+  },
+  {
+    "rule": "Use specific, detailed citations to support each statement of fact.",
+    "source_edit_id": "0491d7ec-030d-4427-8cbf-900d5becf9e9",
+    "source_name": "PSL_Demo_Legal_Document.pdf"
   }
 ]

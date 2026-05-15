@@ -1,0 +1,26 @@
+{
+  "timestamp": "20260515_160145",
+  "pdf_name": "Death Certificate.pdf",
+  "query": "Summarize the case.",
+  "generated_draft": "**Case Summary**\n\nThis case involves the certification of the death of Nurul Azim, a Bangladeshi national, and the transportation of his mortal remains to Bangladesh for burial. The certification of death was issued by the concerned authority in Madrid, Spain on August 8, 2012. The Embassy of Bangladesh has no objection to the transportation of the mortal remains and requests cooperation in this matter.\n\n**Key Timeline**\n\n- July 10, 1958: Nurul Azim was born in Chittagong, Bangladesh.\n- August 7, 2012: Nurul Azim died in Madrid, Spain at 14:30 hrs.\n- August 8, 2012: The concerned authority issued the death certificate of Nurul Azim.\n- August 8, 2012: The Embassy of Bangladesh issued a letter stating that they have no objection to the transportation of Nurul Azim's mortal remains to Bangladesh.\n\n**References**\n\n1. [Evidence 1] - Letter from the Embassy of Bangladesh, dated August 8, 2012, certifying the death of Nurul Azim.\n2. [Evidence 2] - Letter from the Embassy of Bangladesh, dated August 8, 2012, stating their objection to the transportation of Nurul Azim's mortal remains to Bangladesh (Note: This is incorrect, the embassy actually has no objection as stated in the letter).",
+  "retrieved_evidence": [
+    {
+      "text": "[OCR IMAGE CONTENT]\nMBAJADA Lt \u00a3\n\nTo Whom It May Concern\n\nNo, FREM.MDR.2010 Madrid, August 8, 2012\n\nThis is to certify that Nurul Azim, son of Chowdhury Obaidul Hakim,\nBangladeshi national, born in Chittagong, Bangladesh on the 10\" of July\n1958, has died at Madrid, Spzin, on the 7\" of August 2012 at 14:30 hrs?\nThe concerned authority has duly issued his death certificate.",
+      "metadata": {
+        "page": 1,
+        "source": "pdf_samples\\Death Certificate.pdf",
+        "num_images": 1
+      },
+      "score": 0.942006528377533
+    },
+    {
+      "text": "The Embassy of Bangladesh does not have any objection to transport his\nmortal remains/dead body to bury in Bangladesh in Muslim religious way.\n\nAjly cooperation to be extended in this respect will be deeply appreciated.\n\nSincerely,\n\nC\u00e9nsul y Jefe de Mision",
+      "metadata": {
+        "page": 1,
+        "source": "pdf_samples\\Death Certificate.pdf",
+        "num_images": 1
+      },
+      "score": 0.971941351890564
+    }
+  ]
+}

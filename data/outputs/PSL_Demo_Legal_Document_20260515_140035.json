@@ -1,0 +1,53 @@
+{
+  "timestamp": "20260515_140035",
+  "pdf_name": "PSL_Demo_Legal_Document.pdf",
+  "query": "Summarize the case.",
+  "generated_draft": "**Case Summary**\n\nThis is a property ownership dispute case between Amelia Harper (Plaintiff) and Westbrook Holdings LLC (Defendant). The case revolves around a property transfer allegedly recorded on March 12, 2022, which contains conflicting ownership information. The Plaintiff alleges that the transfer records are incomplete and require manual verification.\n\n**Key Timeline**\n\n1. March 12, 2022: Property transfer allegedly recorded.\n2. June 4, 2023: Inspection request submitted.\n3. January 11, 2024: Ownership challenge filed.\n\n**Important Unresolved Issues**\n\n1. The authenticity and completeness of the property transfer records, as indicated by the Inspection Memo and Witness Statement.\n2. The unclear boundary markers, as noted in the Inspection Memo.\n3. The disputed transaction by the prior owner, as stated in the Witness Statement.\n4. The signature mismatch on the record copy of the ownership certificate, as mentioned in the Scanned Note.\n\n**Evidence References**\n\n1. [Evidence 1]: Case File: Harper vs. Westbrook Holdings (Source Page: 1)\n2. [Evidence 2]: Relevant Dates (Source Page: 1)\n3. [Evidence 3]: Lease Agreement (Source Page: 5)\n4. [Evidence 4]: Inspection Memo and Witness Statement (Source Page: 5)\n5. [Evidence 5]: Scanned Note (Source Page: 1)",
+  "retrieved_evidence": [
+    {
+      "text": "Case File: Harper vs. Westbrook Holdings\nThis packet contains partially structured legal-style documents intended for OCR, retrieval, grounded\nsummarization, and evidence extraction experiments. Some sections intentionally contain inconsistent\nformatting and noisy data.\nCase Summary\nPlaintiff: Amelia Harper\nDefendant: Westbrook Holdings LLC\nCase Type: Property Ownership Dispute\nRelevant Dates: March 12, 2022 \u2014 Property transfer allegedly recorded. June 4, 2023 \u2014 Inspection",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.6349391937255859
+    },
+    {
+      "text": "Relevant Dates: March 12, 2022 \u2014 Property transfer allegedly recorded. June 4, 2023 \u2014 Inspection\nrequest submitted. January 11, 2024 \u2014 Ownership challenge filed. The claimant alleges the transfer\nrecords contain conflicting ownership information.\nDocument\nPage\nEvidence Snippet\nTransfer Record\n3\nOwnership remains under review\nInspection Memo\n5\nBoundary markers unclear\nWitness Statement\n7\nPrior owner disputed transaction",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.7962137460708618
+    },
+    {
+      "text": "this LIease upon written not!ce; (ii) re-enter and re-leIt the Premises;\nor (iii) pursue @ny other remedy aIvailable at 1@w or in equity.\n3.3  HOLDING OVER. If Tenant remains in pos5ession after the Expiration Date without\nLandlord's writtcn consent, such tenancy shall beI a month-to-month\ntenancy at 150% of the last applicable BIase Rent.\n3.4  NOTICES. All notices shall be in writing and delivered by (a) personal delivery;\n(b) overnight courier; or (c) certified mail, return receipt requested,",
+      "metadata": {
+        "page": 5,
+        "source": "pdf_samples\\PSL_Demo_Legal_Document.pdf",
+        "num_images": 0
+      },
+      "score": 0.8231675624847412
+    },
+    {
+      "text": "Inspection Memo\n5\nBoundary markers unclear\nWitness Statement\n7\nPrior owner disputed transaction\nSCANNED NOTE (low quality transcription): \u201cOwner ship certifcate appears incomplete. signture\nmismatch on record copy. Need manual verificatoin before filing recommendation.\u201d\nAttached Field Note Scan",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.8242433071136475
+    },
+    {
+      "text": "[OCR IMAGE CONTENT]\nLe\n\nPome agacton cimptate um weno\n\n(Need verticatan trom county cee",
+      "metadata": {
+        "page": 1,
+        "source": "./pdf_samples/sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.8265570402145386
+    }
+  ]
+}

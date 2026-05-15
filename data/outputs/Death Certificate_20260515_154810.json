@@ -1,0 +1,7 @@
+{
+  "timestamp": "20260515_154810",
+  "pdf_name": "Death Certificate.pdf",
+  "query": "Summarize the death certificate\n\n",
+  "generated_draft": "**Case Summary**\n\nThis case involves a dispute between [Plaintiff's Name] and [Defendant's Name] regarding [briefly describe the nature of the dispute]. The Plaintiff alleges that the Defendant breached [specific terms or obligations] as outlined in [contract/agreement name]. The Plaintiff seeks [specific remedies or damages] as a result of the Defendant's alleged breach.\n\n**Key Timeline**\n\n- [Date]: [Plaintiff's Name] and [Defendant's Name] entered into [contract/agreement name].\n- [Date]: The Plaintiff alleges that the Defendant breached [specific terms or obligations].\n- [Date]: The Plaintiff served the Defendant with a [notice of breach/claim].\n- [Date]: The Defendant responded to the Plaintiff's claim, denying any liability.\n- [Date]: The Plaintiff filed a lawsuit against the Defendant in [court name].\n- [Date]: The court scheduled a hearing to resolve the dispute.\n\n**References**\n\n1. [Contract/Agreement Name], dated [Date], between [Plaintiff's Name] and [Defendant's Name].\n2. Plaintiff's Notice of Breach/Claim, dated [Date].\n3. Defendant's Response to Plaintiff's Claim, dated [Date].\n4. Court Filing: [Case Number], filed in [Court Name] on [Date].\n\nNote: The above summary is based on the provided evidence and may not include all relevant details. If additional information is available, it may be necessary to revise this summary.",
+  "retrieved_evidence": []
+}

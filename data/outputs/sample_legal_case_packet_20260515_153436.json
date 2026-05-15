@@ -1,0 +1,28 @@
+{
+  "timestamp": "20260515_153436",
+  "pdf_name": "sample_legal_case_packet.pdf",
+  "query": "Summarize the case.",
+  "generated_draft": "**Case Summary**\n\nThis is a property ownership dispute case between Amelia Harper (Plaintiff) and Westbrook Holdings LLC (Defendant). The Plaintiff alleges that the transfer records of the property contain conflicting ownership information.\n\n**Key Timeline**\n\n1. March 12, 2022: Property transfer allegedly recorded.\n2. June 4, 2023: Inspection request submitted.\n3. January 11, 2024: Ownership challenge filed by the Plaintiff.\n\n**References**\n\n1. [Evidence 1] - Case File: Harper vs. Westbrook Holdings (Source Page: 1)\n2. [Evidence 2] - Relevant Dates (Source Page: 1)\n\nNote: The provided evidence does not contain sufficient information to determine the current status of the case or the outcome of the inspection and ownership challenge.",
+  "retrieved_evidence": [
+    {
+      "chunk_id": "34cbe157-a3e9-4be1-8f71-2d3e93d5bd27",
+      "text": "Case File: Harper vs. Westbrook Holdings\nThis packet contains partially structured legal-style documents intended for OCR, retrieval, grounded\nsummarization, and evidence extraction experiments. Some sections intentionally contain inconsistent\nformatting and noisy data.\nCase Summary\nPlaintiff: Amelia Harper\nDefendant: Westbrook Holdings LLC\nCase Type: Property Ownership Dispute\nRelevant Dates: March 12, 2022 \u2014 Property transfer allegedly recorded. June 4, 2023 \u2014 Inspection",
+      "metadata": {
+        "page": 1,
+        "source": "pdf_samples\\sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.6349391937255859
+    },
+    {
+      "chunk_id": "f5f0beda-b677-43af-9670-0cb43c323f3f",
+      "text": "Relevant Dates: March 12, 2022 \u2014 Property transfer allegedly recorded. June 4, 2023 \u2014 Inspection\nrequest submitted. January 11, 2024 \u2014 Ownership challenge filed. The claimant alleges the transfer\nrecords contain conflicting ownership information.\nDocument\nPage\nEvidence Snippet\nTransfer Record\n3\nOwnership remains under review\nInspection Memo\n5\nBoundary markers unclear\nWitness Statement\n7\nPrior owner disputed transaction",
+      "metadata": {
+        "page": 1,
+        "source": "pdf_samples\\sample_legal_case_packet.pdf",
+        "num_images": 1
+      },
+      "score": 0.7962137460708618
+    }
+  ]
+}

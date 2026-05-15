@@ -61,3 +61,14 @@ https://github.com/UB-Mannheim/tesseract/wiki
 - FAISS used instead of vector DB (simplicity > scalability)
 - Lightweight open-source models used for cost efficiency
 - Heuristic feedback learning instead of full fine-tuning due to time-constraints
+
+### Qualitative Evaluation
+- System struggles a little with very blurry images, but still manages to capture some information
+- The references are grounding properly, though a thorough evaluation couldn't be conducted due to lack of legal documents and time   constrains
+- The feedback learning is now heuristic approach rather than more sophisticated techniques like Reinforcement Learning or fine-tuning.
+
+### Future Work Needed
+- System stores the embeddings in the vector database but generates the embedding every time instead of looking up in the db. 
+- The operator cannot edit in the streamlit app yet, needs to be done inside the ide by running the main.py
+- Even though the feedback learning partially works, it still needs some major evaluation and improvements. 
+

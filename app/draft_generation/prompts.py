@@ -11,7 +11,6 @@ Retrieved Evidence:
 Generate: 
 1. Case summary 
 2. Key timeline 
-3. Important unresolved issues 
-4. Evidence references
+3. References
 
 """

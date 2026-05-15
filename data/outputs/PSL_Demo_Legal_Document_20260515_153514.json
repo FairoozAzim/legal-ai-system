@@ -1,0 +1,18 @@
+{
+  "timestamp": "20260515_153514",
+  "pdf_name": "PSL_Demo_Legal_Document.pdf",
+  "query": "Summarize the case.",
+  "generated_draft": "**Case Summary**\n\nThis case revolves around the default provisions and remedies under Article III of a lease agreement. The key issue at hand is the occurrence of an Event of Default, which triggers the Landlord's right to take various actions.\n\nThe facts of the case are as follows: the Tenant failed to pay an instalment of Base Rent within five (5) business days after written notice. This failure to pay rent constitutes an Event of Default under Section 3.1(a) of the lease agreement.\n\nThe Landlord, upon the occurrence of the Event of Default, may exercise its remedies under Section 3.2 of the lease agreement. The available remedies include terminating the lease upon written notice and re-entering and re-letting the Premises.\n\n**Key Timeline**\n\n- Date of written notice to Tenant for non-payment of rent: Uncertain\n- Date of Tenant's failure to pay instalment of Base Rent: Uncertain\n- Date of Event of Default: Uncertain\n- Date of Landlord's exercise of remedies: Uncertain\n\n**References**\n\n1. Article III, Section 3.1 - Default (Source Page: 5)\n2. Article III, Section 3.2 - Remedies (Source Page: 5)",
+  "retrieved_evidence": [
+    {
+      "chunk_id": "2b2b0a2f-dab4-469f-add5-06b9c96f01b9",
+      "text": "ARTICLE III \u2014 DEFAULT, REMEDIES & GENERAL PROVISIONS\n3.1  DEFAULT. Thc occurrence of any of the following shall constitute an Event of\nDefault: (a) Tenant fails to pay any instal1ment of Base Rent within\nfive (5) business days after written notice; (b) Tenant vacates or\nabandons the Premises; (c) Tenant files for bankruptcy protection.\n3.2  REMEDIES. Upon anI Event of Defau1t, Landlord may, at its clection:I (i) terminate\nthis LIease upon written not!ce; (ii) re-enter and re-leIt the Premises;",
+      "metadata": {
+        "page": 5,
+        "source": "pdf_samples\\PSL_Demo_Legal_Document.pdf",
+        "num_images": 0
+      },
+      "score": 0.8231675624847412
+    }
+  ]
+}
